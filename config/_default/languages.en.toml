@@ -1,0 +1,12 @@
+title = "wgvanveen.com"
+
+[params.author]
+name = "Wouter van Veen"
+headline = "A personal tech blog"
+bio = "Senior backend engineer"
+image = "profile.png"
+links = [
+{ github = "https://github.com/woutervanveen"},
+{ email = "wgvanveen@wgvanveen.com"},
+{bluesky = ""}
+]

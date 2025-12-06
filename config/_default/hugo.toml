@@ -1,0 +1,9 @@
+baseUrl = "https://wgvanveen.com"
+languageCode = "en"
+
+title = "wgvanveen.com"
+
+[params.author]
+name = "Wouter van Veen"
+
+headline = "A personal tech blog"
