@@ -6,7 +6,9 @@ headline = "A personal tech blog"
 bio = "Senior backend engineer"
 image = "profile.png"
 links = [
-{ github = "https://github.com/woutervanveen"},
-{ email = "wgvanveen@wgvanveen.com"},
-{bluesky = ""}
+  { github = "https://github.com/woutervanveen" },
+  { email = "mailto:wgvanveen@wgvanveen.com" },
+  { bluesky = "https://bsky.app/profile/wgvanveen.bsky.social" },
+  { linkedin = "https://www.linkedin.com/in/wgvanveen/" }
+
 ]
