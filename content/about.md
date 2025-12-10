@@ -17,5 +17,5 @@ I have a strong preference for functional programming, but at the same time try 
 Feel free to reach out over e-mail, or through LinkedIn if you have any question or suggestion for this website!
 
 ## About this website
-I've founded this website for two reasons: share the knowledge I've gained over the years and as a way to keep improving my own skill. The thing is, when you are developer it is easy to stick to what you already know. So join me in this endeavor to keep learning, to build some stuff and to break some stuff along the way.
+I've founded this website for two reasons: share the knowledge I've gained over the years and as a way to keep improving my own skill. The thing is, when you are developer it is easy to stick to what you already know. So join me in this endeavor to keep learning, to build some stuff and to break some stuff along the way. 
 

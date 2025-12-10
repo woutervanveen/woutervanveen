@@ -7,3 +7,8 @@ title = "wgvanveen.com"
 name = "Wouter van Veen"
 
 headline = "A personal tech blog"
+
+
+[caches]
+	[caches.images]
+		dir= ':cacheDir/images'
