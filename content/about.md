@@ -10,7 +10,7 @@ showAuthor: false
 {{< profile align="center" >}}
 
 ## About me
-I work as a back-end engineer @DHL Ecommerce the Netherlands. I specialize in working developing cloud-native applications in event-driven landscapes. I started my career as an Aerospace engineer and after obtaining my PhD. in the same field I switched to Software Engineering permanently. 
+I work as a back-end engineer @DHL Ecommerce the Netherlands. I specialize in developing cloud-native applications in event-driven landscapes. I started my career as an Aerospace engineer and after obtaining my PhD in the same field, I switched to Software Engineering permanently. 
 
 I have a strong preference for functional programming, but at the same time try to stress that this doesn't mean that we cannot use object oriented programming. I love working with different languages to learn their quirks, but more importantly the idea and philosophy behind a language.
 
