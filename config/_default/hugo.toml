@@ -12,3 +12,9 @@ headline = "A personal tech blog"
 [caches]
 	[caches.images]
 		dir= ':cacheDir/images'
+
+
+[services]
+  [services.googleAnalytics]
+    id = "G-4NN8YNW3V6"
+
