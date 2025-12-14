@@ -17,7 +17,7 @@ In this short tutorial we will focus on request validation in an Quarkus applica
 - Context-validation
 
 ## The domain
-The movie theater in our town asked us to develop a small API to make reservations at the local cinema. The only request is that we register a person's name, it's seat an which movie they want to attend. In addition, the would like to know what kind of ticket people want to buy. 
+The movie theater in our town asked us to develop a small API to make reservations at the local cinema. The only request is that we register a person's name, their seat and which movie they want to attend. In addition, they would like to know what kind of ticket people want to buy. 
 
 Digesting the small "requirement" above we only need the following information in our request
 
@@ -47,7 +47,7 @@ quarkus extension add rest-jackson
 ```
 
 ### Setting up our endpoint
-We are all set and good to go with the development of our API. If you've followed along so far you should have a standard Quarkus project with a single endpoint called the `GreetingsResource`. For now remove the entire package and create a new package called `org.cinema.reservation.api` which will house our new endpoint. Create the endpoint inside as follows:
+We are all set and good to go with the development of our API. If you've followed along so far, you should have a standard Quarkus project with a single endpoint called the `GreetingsResource`. For now, remove the entire package and create a new package called `org.cinema.reservations.api` which will house our new endpoint. Create the endpoint inside as follows:
 
 ```java
 
@@ -83,7 +83,11 @@ Type-validation is all about designing our endpoint in such a way that the types
 | The movie | `movieId` | `Long` |
 | The reservation date | `reservationDate` | `Instant` |
 
-There are some assumptions I must explain before we go into developing a request. The `seatNumber` is actually a seat and a row, we could split this into a row and seat, but for now we keep it as a `String`. The movie is actually only the `id` of the movie, we expect that somewhere inside our application we already keep track of the movies. The most interesting field here is the `TicketType`, which we modeled as an `enum`, which in itself is part of the validation, because now we can specify which ticket types are actually valid and which are not. Lastly the `reservationDate` is also modeled as an `Instant`, which only accepts valid date strings of the format: `2025-01-01T12:00:00Z`. Great, let's model our request. Create two new files in the package `org.cinema.reservation.api.models`:
+There are some assumptions I must explain before we go into developing a request. 
+- The `seatNumber` is actually a seat and a row, we could split this into a row and seat, but for now we keep it as a `String`. 
+- The movie is actually only the `id` of the movie, we expect that somewhere inside our application we already keep track of the movies. 
+- The most interesting field here is the `TicketType`, which we modeled as an `enum`, which in itself is part of the validation, because now we can specify which ticket types are actually valid and which are not. 
+- Lastly the `reservationDate` is also modeled as an `Instant`, which only accepts valid date strings of the format: `2025-01-01T12:00:00Z`. Great, let's model our request. Create two new files in the package `org.cinema.reservation.api.models`:
 ```java
 public enum TicketType{
   TOP,
@@ -167,7 +171,7 @@ This test spins up our application and does a normal REST request to our API. We
 We expect in this case that the endpoint will reject our call, because we didn't include any information, however, this will still return the `204` result, because we did not yet specify that our fields should be filled. Let's continue to the next section to fix this.
 
 ### API-object validation
-For our API object validation we are going to use the Hibernate validator package from [Quarkus](https://quarkus.io), which we can install through a Quarkus extensions:
+For our API object validation we are going to use the Hibernate validator package from [Quarkus](https://quarkus.io), which we can install through a Quarkus extension:
 ```bash
 quarkus extension add hibernate-validator
 ```
@@ -406,4 +410,4 @@ Now, even though exception flow is not really nice, we still get the status code
 ## Conclusion
 After reading this post you should be aware of the three levels of validation and how to implement them in a Quarkus application. In general the easiest to implement is the "type-validation", after that you can "defend" your API using "api-validation" and finally, if you really must, you can use "context-validation". I hope you enjoyed this post, feel free to share!
 
-You can find the full source code of this example over on [Github](https://github.com/woutervanveen/quarkus-validation)
+You can find the full source code of this example over on [Github](https://github.com/woutervanveen/quarkus-validation).
