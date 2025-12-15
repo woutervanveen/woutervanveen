@@ -2,3 +2,5 @@ colorScheme = "fire"
 
 homepage.layout = "profile"
 homepage.showRecent = true
+
+robots = "all"
