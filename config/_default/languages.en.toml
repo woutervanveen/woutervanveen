@@ -1,8 +1,8 @@
-title = "wgvanveen.com"
+title = "Wouter's Techblog"
 
 [params.author]
 name = "Wouter van Veen"
-headline = "A personal tech blog"
+headline = "Welcome to my techblog. I will mainly write about event-driven systems, Kubernetes, Quarkus, Kafka, Spring Boot and everything in between. Feel free to reach out if you have any questions ore suggestions!"
 bio = "Senior backend engineer"
 image = "profile.png"
 links = [
