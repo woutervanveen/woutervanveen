@@ -1,23 +1,16 @@
 ---
-date: '2025-12-31T10:00:00+01:00'
+date: '2025-12-29T19:58:18+01:00'
 title: 'Deploy Quarkus to Kubernetes'
-thumbnail: '00_thumbnail.jpg'
-cover: '00_thumbnail.jpg'
-showTableOfContents: true
-showBreadcrumbs: true
-draft: false
-showSummary: true
-summary: Let's prepare our application for deployment! I will go over the steps to deploy a Quarkus application into a container and deploy it to a Minikube cluster running on your own machine.
+summary: Let's prepare our application for deployment! I will go over the steps to deploy a Quakrus application into a container and deploy it to a Minikube cluster running on your own machine.
 sharingLinks: [linkedin, reddit, bluesky, email]
-tags: [quarkus, deployment, kubernetes, minikube, cloud-native, docker, java]
+tags: [quarkus, deployment, kubernetes, minikube, cloud-native, docker]
 categories: ["tutorial"]
+series: "Creating an application with Quarkus"
 ---
 
-{{<lead>}}
 In the [previous post](posts/00_quarkus_validation) we've created a small reservation system for a local cinema. Our application has little functionality, but we've decided that, from the start, we should be able to know how to ship our product. Therefor in this post we will prepare our application for deployment.
 
 So why would you, at this stage, care about deployments at all? I think that deploying often and in an early stage of your project helps to create a serious production ready system. It puts you in the mindset of working with a live system. In addition, if you are making a cloud-native application running on multiple pods gives you a lot of freedom, but also some constraints to take into account. 
-{{</lead>}}
 
 ## The domain
 Since the last time we worked on our application a lot has happened. The director of the local cinema talked to other cinema's during a cinema conference and proudly talked about our application that is under development! We've gained a lot of additional attraction and at least two dozen other cinema's want to share their resources and want to use our application. We need to think about a deployment strategy that gives us the flexibility to deploy multiple times a day without causing any downtime. Also the load to our application has become unpredictable and we need to start thinking about scaling. Let me summarize "the requirements" as follows:
