@@ -1,0 +1,29 @@
+
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Wouter's tech blog"
+theme = 'poison'
+
+[params]
+brand = "Wouter's techblog"
+description = "Personal tech blog of Wouter van Veen"
+remote_brand_image = "https://github.com/woutervanveen.png"
+email_url = "mailto://wgvanveen@wgvanveen.com"
+github_url = "https://github.com/woutervanveen"
+linkedin_url="https://www.linkedin.com/in/wgvanveen/"
+bluesky_url="https://bsky.app/profile/wgvanveen.bsky.social"
+
+menu = [
+  {Name = "About", URL = "/about/", HasChildren = false},
+  {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren=true, Limit=5}
+]
+
+
+[taxonomies]
+  series = 'series'
+  tags = 'tags'
+
+[services]
+  [services.googleAnalytics]
+    id = "G-4NN8YNW3V6"
+

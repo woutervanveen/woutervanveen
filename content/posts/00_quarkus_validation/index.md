@@ -2,17 +2,11 @@
 date: '2025-12-13T19:42:51+01:00'
 draft: false
 title: 'API validation using Quarkus'
-showBreadcrumbs: true
-showTableOfContents: true
-sharingLinks: [linkedin, reddit, bluesky, email]
-cover: quarkus_logo.jpg
-thumbnail: quarkus_thumbnail.svg
 description: Creating a validation model for our Quarkus application
 showSummary: true
 summary: In post I will go over the levels of validation, and how to implement them in a Quarkus application. 
-keywords: [quarkus, api-validation, cloud-native ]
 tags: ["quarkus", "api-validation", "java", "cloud-native", "validation", "rest"]
-categories: ["tutorial"]
+series: "Creating an application with Quarkus"
 ---
 In this short tutorial we will focus on request validation in an Quarkus application. We will develop a small application and explore the three layers of validation:
 - Type-validation
