@@ -1,5 +1,5 @@
 
-baseURL = 'https://example.org/'
+baseURL = 'https://wgvanveen.com/'
 languageCode = 'en-us'
 title = "Wouter's tech blog"
 theme = 'poison'
