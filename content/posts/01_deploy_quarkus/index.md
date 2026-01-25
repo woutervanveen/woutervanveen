@@ -4,6 +4,7 @@ title: 'Deploy Quarkus to Kubernetes'
 summary: Let's prepare our application for deployment! I will go over the steps to deploy a Quakrus application into a container and deploy it to a Minikube cluster running on your own machine.
 sharingLinks: [linkedin, reddit, bluesky, email]
 tags: [quarkus, deployment, kubernetes, minikube, cloud-native, docker]
+draft: false
 categories: ["tutorial"]
 series: "Creating an application with Quarkus"
 ---
