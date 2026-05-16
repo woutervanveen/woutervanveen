@@ -1,5 +1,5 @@
 ---
-date: '2026-03-01T08:58:18+01:00'
+date: '2026-05-16T15:00:00+01:00'
 title: 'Setting up a development environment the DevOps way: Fedora Silverblue & toolbox'
 draft: false
 summary: Reusable and declarative development environemnts that you actually want to use; meet Fedora Toolbox. In this short tutorial I will go over the steps to setup a Toolbox using container files and automate the building process. As final added cherry on top I will demonstrate how to use the development environment for your CI/CD pipelines using Gitea. 
